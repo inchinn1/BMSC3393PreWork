@@ -86,6 +86,8 @@ def getSpike(ID):
     spike = spikeWave(15)
     sampleRate = 10000
     sponRate = IDcode[-2]+IDcode[-3]
+    if sponRate ==0:
+        sponRate+=1
     contra = sponRate+(IDcode[-4]+IDcode[-1]+30)
     
     duration = 5
